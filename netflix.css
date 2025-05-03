@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color:black;
+}
+
+.mainNetflixContainer{
+    /*border: 2px solid red;*/
+    /*padding: 1rem 2rem;*/
+}
+
+.backgroundContainer{
+    background: url("./banner.jpg");
+    filter: blur(16px);
+    height: 100vh;
+    position: relative;
+}
+
+.pinkoverlay{
+    background-color: rgba(110, 5, 20, 0.653);
+    height: 100%;
+    width: 100%;
+}
+
+.contentContainer{
+    position: absolute;
+    top: 0;
+    background-color: rgba(127, 25, 25, 0.037);
+    padding: 0rem 2 rem;
+}
+
+nav{
+    /*border: 2px solid green;*/
+    height: 20vh;
+}
+
+.upperNavbarSection{
+    /*border: 2px solid blue;*/
+    display: flex;
+    height: 50%;
+}
+
+.upperNavbarLeftSection{
+    /*border: 2px solid red;*/
+    width: 50%;
+}
+
+.netflixlogo{
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.upperNavbarRightSection{
+    /*border: 2px solid green;*/
+    width: 50%;
+}
+
+.navBarButtonContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.languageButton{
+    display:flex;
+    padding: .4rem .8rem;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+}
+.signinbutton{
+    background: white;
+    padding: .4rem .8rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.languageButton p{
+    margin-left: 5px;
+}
+
+.lowerNavbarSection{
+    /*border: 2px solid ridge;*/
+    height: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.menuList{
+    /*border: 2px solid green;*/
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.329);
+    height: 5vh;
+}
+
+.menuList li{
+    /*border: 2px solid red;*/
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bannerSection{
+    /*border: 2px solid rgb(0, 0, 0);*/
+    height: 90vh;
+    background-image: url("./banner.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    padding: 30px;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(transparent, rgba(0,0,0, .3), black);
+}
+
+.bannerContainer{
+    /*border: 2px solid red;*/
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    color: white;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerContainer h2{
+    font-size: 4rem;
+    /*border: 2px solid green;*/
+    width: 40%;
+    text-align: center;
+}
+
+.bannerContainer h4{
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+.bannerContainer p{
+    font-size: 1rem;
+    margin: 20px;
+}
+
+.inputContainer{
+    /*border: 2px solid green;*/
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.emailbox{
+    padding: 1rem 2 rem;
+    border-radius: 50px;
+    border: 1px solid white;
+    outline: none;
+    width:60%;
+    font-size: 1.2rem;
+    color: white;
+    height:10vh;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.emailbox::placeholder{
+    color: white;
+}
+
+.getStartedButton{
+    width: 30%;
+    background-color: red;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 900;
+    height:10vh;
+}
+
+.carouselSection,
+.planSection,
+.reasonToJoinSection{
+    /*border: 2px solid red;*/
+    color: white;
+}
+
+.carouselSection h2,
+.planSection h2,
+.reasonToJoinSection{
+    /*border: 2px solid red;*/
+    margin-left: 5rem;
+    font-size: 2.2rem;
+}
+
+.carouselCardContainer,
+.plansContainer,
+.reasonsContainer{
+    /*border: 2px solid green;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+}
+
+.carouselCard{
+    width: 10%;
+    /*border: 2px solid yellow;*/
+    height:50vh;
+    border-radius: 20px;
+    position: relative;
+}
+
+.crouselNumberContainer span{
+    color: rgba(0,0,0,0.8);
+    -webkit-text-stroke: 0.125rem rgb(255,255,255);
+    text-shadow: : 0 0 1.5 rgba(0,0,0,0.5);
+    font-size: 5rem;
+}
+
+.crouselNumberContainer{
+    position: absolute;
+    left: -25px;
+}
+
+.crouselImageContainer{
+    width: 100%;
+    height: 100%
+}
+
+.crouselImageContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.planCard{
+    border: 2px solid green;
+    height: 40vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    
+}
+
+.planCard1{
+    background: linear-gradient(149deg, #1C4072 6.96%, #172B47 40.17%,
+    #120c1f 73.39%);
+}
+
+.planCard2{
+    background: linear-gradient(149deg, #1C4072 6.96%, #172B47 40.17%,
+    #120c1f 73.39%);
+}
+
+.planCard3{
+    background: linear-gradient(149deg, #792A95 6.96%, #38215C 40.17%,
+    #120c1f 73.39%);
+}
+
+.planCard4{
+    background: linear-gradient(149deg, #922556 6.96%, #391945 40.17%,
+    #120c1f 73.39%);
+}
+
+.planCard h2{
+    margin-left: 0;
+    font-size: 1.5REM;
+}
+
+.planCard h4{
+    margin-left: 0;
+    font-size: 1.3REM;
+}
+
+.reasonCardUpper{
+    font-size: 1.5rem;
+}
